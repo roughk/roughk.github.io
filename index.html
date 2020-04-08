@@ -1,9 +1,13 @@
 <!--
 Katherine Roughan
 Last Updated 4/8/2020
+
+
 Built utilizing the W3.CSS html framework
-and derived from the "Screen 50/50 Template" from
-https://www.w3schools.com/w3css/w3css_templates.asp
+Derived from the basic "Screen 50/50 Template" (https://www.w3schools.com/w3css/w3css_templates.asp)
+as well as other examples provided at www.w3schools.com
+
+
 -->
 
 <!DOCTYPE html>
@@ -13,6 +17,38 @@ https://www.w3schools.com/w3css/w3css_templates.asp
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">
+
+<!-- Scrolling Navbar -->
+<style>
+  body {margin:0;}
+  .navbar {
+    overflow: hidden;
+    background-color: #123;<!-- adjust color here-->
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+</style>
+
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="/index2.html">Contact</a>
+</div>
 
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
@@ -55,7 +91,7 @@ https://www.w3schools.com/w3css/w3css_templates.asp
       </div>
     </div>
     <br>
-    <p>Just call me awesome.</p>
+    <p>It's nifty Stuff.</p>
   </div>
   <div class="w3-half w3-indigo w3-container" style="min-height:800px">
     <div class="w3-padding-64 w3-center">
@@ -79,7 +115,9 @@ https://www.w3schools.com/w3css/w3css_templates.asp
     </div>
   </div>
 </div>
-
+<a href="default.asp">
+ <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
 <!-- Third Grid: Swing By & Contact
 <div class="w3-row" id="contact">
   <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
