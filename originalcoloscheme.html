@@ -1,23 +1,12 @@
 <!--
 Katherine Roughan
-Last Updated 4/27/2020
+Last Updated 4/8/2020
 
 
 Built utilizing the W3.CSS html framework
 Derived from the basic "Screen 50/50 Template" (https://www.w3schools.com/w3css/w3css_templates.asp)
 as well as other examples provided at www.w3schools.com
 
------------
-https://www.w3schools.com/colors/colors_palettes.asp
-Color Pallette
-HEX: #92a8d1
-
-HEX: #034f84
-
-HEX: #f7cac9
-
-HEX: #f7786b
-----------
 
 -->
 
@@ -29,34 +18,50 @@ HEX: #f7786b
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">
 
-<!--Fixed Postion Dropdown Navbar-->
-<div class="w3-bar " style="background:#f7cac9; position: fixed">
- <a href="/index2.html" class="w3-bar-item w3-button">Home</a>
- <a href="#" class="w3-bar-item w3-button">Link 1</a>
- <div class="w3-dropdown-hover">
-   <button class="w3-button">Dropdown</button>
-   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-     <a href="#" class="w3-bar-item w3-button">Link 1</a>
-     <a href="#" class="w3-bar-item w3-button">Link 2</a>
-     <a href="#" class="w3-bar-item w3-button">Link 3</a>
-   </div>
- </div>
+<!-- Scrolling Navbar -->
+<style>
+  body {margin:0;}
+  .navbar {
+    overflow: hidden;
+    background-color: #123;<!-- adjust color here-->
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+</style>
+
+
+<div class="navbar">
+  <a href="/index2.html">Page 2</a>
 </div>
 
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
-  <div class="w3-half w3-container w3-center" style="color: #000000; background:#f7cac9; height:700px">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
       <h1>Katherine Roughan</h1>
     </div>
     <div class="w3-padding-64">
-      <a href="#About Me" class="w3-button w3-block w3-hover-light-gray w3-padding-16">About Me</a>
-      <a href="#work" class="w3-button w3-block w3-hover-light-gray w3-padding-16">My Work</a>
-      <a href="#work" class="w3-button w3-block w3-hover-light-gray w3-padding-16">Timeline</a>
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-light-gray w3-padding-16">My Work</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-indigo w3-padding-16">Timeline</a>
       <!-- <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a> -->
     </div>
   </div>
-  <div class="w3-half  w3-container" style="color: #ffffff; background:#f7786b; height:700px">
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
       <h1>About Me</h1>
       <img src="images/KR1sq.png" class="w3-margin w3-circle" alt="Me" style="width:50%">
@@ -71,7 +76,7 @@ HEX: #f7786b
 
 <!-- Second Grid: Work & Timeline -->
 <div class="w3-row">
-  <div class="w3-half w3-center" style="color: #000000; background:#92a8d1; min-height:700px" id="work">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
     <div class="w3-padding-64">
       <h2>My Work</h2>
       <p>Some of my recent projects.</p>
@@ -87,7 +92,7 @@ HEX: #f7786b
     <br>
     <p>It's nifty Stuff.</p>
   </div>
-  <div class="w3-half w3-container" style="color: #ffffff; background:#034f84; min-height:700px">
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
     <div class="w3-padding-64 w3-center">
       <h2>Timeline</h2>
       <p>Notable Events</p>
@@ -103,7 +108,7 @@ HEX: #f7786b
             <td>Bachelor of Computer Science</td>
             <td>Rensselaer PolyTechnic Institute</td>
           </tr>
-          <tr style="color: #000000; background:#a2b9bc">
+          <tr style="background:#034f84">
             <td>2019</td>
             <td>Gameplay Programmer</td>
             <td>For Our Youth LLC.</td>
@@ -113,7 +118,7 @@ HEX: #f7786b
             <td>Began Undergraduate Education</td>
             <td>Rensselaer PolyTechnic Institute</td>
           </tr>
-          <tr style="color: #000000; background:#a2b9bc">
+          <tr style="background:#a2b9bc">
             <td>2015</td>
             <td>Eagle Scout</td>
             <td>Boy Scouts of America</td>

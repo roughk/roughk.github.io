@@ -1,6 +1,6 @@
 <!--
 Katherine Roughan
-Last Updated 4/8/2020
+Last Updated 4/27/2020
 
 
 Built utilizing the W3.CSS html framework
@@ -18,35 +18,19 @@ as well as other examples provided at www.w3schools.com
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">
 
-<!-- Scrolling Navbar -->
-<style>
-  body {margin:0;}
-  .navbar {
-    overflow: hidden;
-    background-color: #123;<!-- adjust color here-->
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-</style>
-
-
-<div class="navbar">
-  <a href="/index.html">Home</a>
-</div>
+<!--Fixed Postion Dropdown Navbar-->
+<div class="w3-bar " style="background:#f7cac9; position: fixed">
+   <a href="/index2.html" class="w3-bar-item w3-button">Home</a>
+   <a href="#" class="w3-bar-item w3-button">Link 1</a>
+   <div class="w3-dropdown-hover">
+     <button class="w3-button">Dropdown</button>
+     <div class="w3-dropdown-content w3-bar-block w3-card-4">
+       <a href="#" class="w3-bar-item w3-button">Link 1</a>
+       <a href="#" class="w3-bar-item w3-button">Link 2</a>
+       <a href="#" class="w3-bar-item w3-button">Link 3</a>
+     </div>
+   </div>
+  </div>
 
 <p>It's really empty here!</p>
 
